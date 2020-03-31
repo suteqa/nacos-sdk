@@ -5,18 +5,7 @@ import (
 	"github.com/suteqa/nacos-sdk/clients/naming_client"
 	"github.com/suteqa/nacos-sdk/utils"
 	"github.com/suteqa/nacos-sdk/vo"
-	"log"
 )
-
-
-func RegisterServiceInstance(client naming_client.INamingClient, param vo.RegisterInstanceParam) {
-	success, err := client.RegisterInstance(param)
-	if success {
-		log.Fatalf("[INFO] 服务名 [%s] 注册成功  address [%s:%d] \n", param.ServiceName, param.Ip, param.Port)
-	} else {
-		log.Fatalf("[ERROR] 服务名 [%s] 注册失败  address [%s:%d] ERROR=%v\n", param.ServiceName, param.Ip, param.Port,err)
-	}
-}
 
 func ExampleServiceClient_RegisterServiceInstance(client naming_client.INamingClient, param vo.RegisterInstanceParam) {
 	success, _ := client.RegisterInstance(param)

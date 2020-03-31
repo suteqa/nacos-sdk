@@ -60,7 +60,7 @@ func (proxy *NamingProxy) DeregisterInstance(serviceName string, ip string, port
 }
 
 func (proxy *NamingProxy) SendBeat(info model.BeatInfo) (int64, error) {
-	log.Printf("[INFO] namespaceId:<%s> sending beat to server:<%s> \n", proxy.clientConfig.NamespaceId, utils.ToJsonString(info))
+	//[INFO] namespaceIdlog.Printf("[INFO] namespaceId:<%s> sending beat to server:<%s> \n", proxy.clientConfig.NamespaceId, utils.ToJsonString(info))
 	params := map[string]string{}
 	params["namespaceId"] = proxy.clientConfig.NamespaceId
 	params["serviceName"] = info.ServiceName

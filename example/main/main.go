@@ -18,7 +18,7 @@ func main() {
 		"clientConfig": constant.ClientConfig{
 			TimeoutMs:           9000,
 			ListenInterval:      10000,
-			CacheDir:"data/nacos/cache",
+			CacheDir:            "data/nacos/cache",
 			NotLoadCacheAtStart: true,
 		},
 	})
@@ -34,9 +34,6 @@ func main() {
 		Ephemeral:   true,
 	})
 
-
-	select {
-
-	}
+	select {}
 
 }
