@@ -2,39 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cda4275d-ea65-4751-9bf0-bfb668a31cbf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springcloud/index.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gopkg.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gopkg.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/cache/disk_cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/cache/disk_cache.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/client_factory.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/client_factory.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/config_client/config_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/config_client/config_client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/config_client/config_client_interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/config_client/config_client_interface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/config_client/config_client_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/config_client/config_client_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/config_client/config_proxy.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/config_client/config_proxy.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/nacos_client/nacos_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/nacos_client/nacos_client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/nacos_client/nacos_client_interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/nacos_client/nacos_client_interface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/naming_client/beat_reactor.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/naming_client/beat_reactor.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/naming_client/beat_reactor_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/naming_client/beat_reactor_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/naming_client/host_reator.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/naming_client/host_reator.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/naming_client/naming_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/naming_client/naming_client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/naming_client/naming_client_interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/naming_client/naming_client_interface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/naming_client/naming_client_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/naming_client/naming_client_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clients/naming_client/naming_proxy.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/naming_client/naming_proxy.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/naming_client/push_receiver.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/naming_client/push_receiver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/naming_client/subscribe_callback.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/naming_client/subscribe_callback.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/naming_client/subscribe_callback_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/clients/naming_client/subscribe_callback_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/constant/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/constant/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/http_agent/http_agent.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/http_agent/http_agent.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/logger/logger.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/nacos_error/nacos_error.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/nacos_error/nacos_error.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/nacos_server/nacos_server.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/nacos_server/nacos_server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/example/main/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/service_client_example.go" beforeDir="false" afterPath="$PROJECT_DIR$/example/service_client_example.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock/mock_config_client_interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/mock/mock_config_client_interface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock/mock_nacos_client_interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/mock/mock_nacos_client_interface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock/mock_naming_client_interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/mock/mock_naming_client_interface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vo/service_param.go" beforeDir="false" afterPath="$PROJECT_DIR$/vo/service_param.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/index.go" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/index.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +47,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build github.com/suteqa/nacos-sdk">
+    <configuration name="go build github.com/suteqa/nacos-sdk" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="nacos-sdk-go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/suteqa/nacos-sdk" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build github.com/suteqa/nacos-sdk/example/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="nacos-sdk-go" />
       <working_directory value="$PROJECT_DIR$" />
@@ -85,8 +64,25 @@
       <package value="github.com/suteqa/nacos-sdk/example/main" />
       <method v="2" />
     </configuration>
+    <configuration name="go build index.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="nacos-sdk-go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/springcloud/index.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="nacos-sdk-go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/suteqa/nacos-sdk" />
+        <item itemvalue="Go Build.go build index.go" />
+        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build github.com/suteqa/nacos-sdk/example/main" />
       </list>
     </recent_temporary>
@@ -101,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585644425405</updated>
-      <workItem from="1585644426685" duration="4208000" />
+      <workItem from="1585644426685" duration="6418000" />
     </task>
     <servers />
   </component>

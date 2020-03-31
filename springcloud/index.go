@@ -3,12 +3,12 @@ package springcloud
 import (
 	"github.com/suteqa/nacos-sdk/clients"
 	"github.com/suteqa/nacos-sdk/common/constant"
+	"github.com/suteqa/nacos-sdk/example"
 	"github.com/suteqa/nacos-sdk/vo"
-	"log"
 	"net"
 )
 
-func InitRegisterServiceInstance(addr, serverName string, port, serverPort uint64) {
+func InitService(addr, serverName string, port, serverPort uint64) {
 	client, _ := clients.CreateNamingClient(map[string]interface{}{
 		"serverConfigs": []constant.ServerConfig{
 			{
@@ -24,7 +24,7 @@ func InitRegisterServiceInstance(addr, serverName string, port, serverPort uint6
 		},
 	})
 	ip := getIpAddr()
-	success, err := client.RegisterInstance(vo.RegisterInstanceParam{
+	example.RegisterServiceInstance(client,vo.RegisterInstanceParam{
 		Ip:          ip,
 		Port:        serverPort,
 		ServiceName: serverName,
@@ -37,10 +37,9 @@ func InitRegisterServiceInstance(addr, serverName string, port, serverPort uint6
 		},
 		Ephemeral: true,
 	})
-	if success {
-		log.Fatalf("nacos 注册成功  ip：%s:%d \n", ip, serverPort)
-	} else {
-		log.Fatalln("nacos 注册失败 ，", err)
+
+	select {
+
 	}
 }
 
@@ -55,6 +54,8 @@ func getIpAddr() string {
 	}
 	return "127.0.0.1"
 }
+
+
 
 func DeRegisterServiceInstance() {
 
