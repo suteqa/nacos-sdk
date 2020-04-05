@@ -13,6 +13,7 @@ import (
 	"github.com/suteqa/nacos-sdk/utils"
 	"io/ioutil"
 	"log"
+	"math/big"
 	"math/rand"
 	"net/http"
 	"reflect"
@@ -189,6 +190,7 @@ func (server *NacosServer) initRefreshSrvIfNeed() {
 	if server.endpoint == "" {
 		return
 	}
+	big.Int{}
 	server.refreshServerSrvIfNeed()
 	go func() {
 		time.Sleep(time.Duration(1) * time.Second)

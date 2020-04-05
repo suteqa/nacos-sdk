@@ -12,7 +12,7 @@ import (
 	"syscall"
 )
 
-func Service(configs []constant.ServerConfig, serverName string, serverPort uint64) naming_client.INamingClient {
+func Service(configs []constant.ServerConfig, serverName string, serverPort uint64) {
 	client, _ := clients.CreateNamingClient(map[string]interface{}{
 		"serverConfigs": configs,
 		"clientConfig": constant.ClientConfig{
@@ -36,7 +36,6 @@ func Service(configs []constant.ServerConfig, serverName string, serverPort uint
 		},
 		Ephemeral: true,
 	})
-	return client
 }
 
 func getIpAddr() string {

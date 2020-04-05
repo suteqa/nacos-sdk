@@ -22,6 +22,10 @@ func main() {
 
 	//启动注册服务
 	springcloud.Service(configs, "mytest", port)
+	//获取配置中心
+	str, _ := springcloud.Config(configs, "server-mall-dev.yaml")
+	//strings.NewReader(str)
+	fmt.Println(str)
 
 	//启动http服务
 	l, _ := net.Listen("tcp", fmt.Sprintf(":%d", port))

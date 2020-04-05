@@ -47,6 +47,11 @@ func NewConfigClient(nc nacos_client.INacosClient) (ConfigClient, error) {
 		return config, err
 	}
 	config.configCacheDir = clientConfig.CacheDir + string(os.PathSeparator) + "config"
+	//创建目录
+	_, err = os.Stat(config.configCacheDir)
+	if err != nil {
+		err = os.MkdirAll(config.configCacheDir, 0666)
+	}
 	config.configProxy, err = NewConfigProxy(serverConfig, clientConfig, httpAgent)
 	if clientConfig.OpenKMS {
 		kmsClient, err := kms.NewClientWithAccessKey(clientConfig.RegionId, clientConfig.AccessKey, clientConfig.SecretKey)
