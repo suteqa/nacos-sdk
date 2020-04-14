@@ -16,8 +16,8 @@ func Service(configs []constant.ServerConfig, serverName string, serverPort uint
 	client, _ := clients.CreateNamingClient(map[string]interface{}{
 		"serverConfigs": configs,
 		"clientConfig": constant.ClientConfig{
-			TimeoutMs:      9000,
-			ListenInterval: 10000,
+			TimeoutMs:      70000,
+			ListenInterval: 100000,
 			//CacheDir:            "data/nacos/cache",
 			NotLoadCacheAtStart: true,
 		},
