@@ -12,6 +12,8 @@ import (
 	"syscall"
 )
 
+var app naming_client.INamingClient
+
 func Service(configs []constant.ServerConfig, serverName string, serverPort uint64) {
 	client, _ := clients.CreateNamingClient(map[string]interface{}{
 		"serverConfigs": configs,
@@ -36,6 +38,9 @@ func Service(configs []constant.ServerConfig, serverName string, serverPort uint
 		},
 		Ephemeral: true,
 	})
+
+	//连接
+	app = client
 }
 
 func getIpAddr() string {

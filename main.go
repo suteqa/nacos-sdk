@@ -6,6 +6,7 @@ import (
 	"github.com/suteqa/nacos-sdk/springcloud"
 	"net"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -22,6 +23,20 @@ func main() {
 
 	//启动注册服务
 	springcloud.Service(configs, "mytest", port)
+
+	go func() {
+		timer := time.NewTicker(time.Second * 2)
+		for {
+			select {
+			case <-timer.C:
+				header:=make(http.Header)
+				header.Set("Authentication","")
+				bb, _ := springcloud.Get("Server-Mall", "/wx/merchant/checkEnter",header)
+				fmt.Println(string(bb))
+			}
+		}
+	}()
+
 	//获取配置中心
 	str, _ := springcloud.Config(configs, "server-mall-dev.yaml")
 	//strings.NewReader(str)

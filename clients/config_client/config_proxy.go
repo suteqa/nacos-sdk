@@ -20,7 +20,6 @@ func NewConfigProxy(serverConfig []constant.ServerConfig, clientConfig constant.
 	var err error
 	proxy.nacosServer, err = nacos_server.NewNacosServer(serverConfig, httpAgent, clientConfig.TimeoutMs, clientConfig.Endpoint)
 	return proxy, err
-
 }
 
 func (cp *ConfigProxy) GetServerList() []constant.ServerConfig {
